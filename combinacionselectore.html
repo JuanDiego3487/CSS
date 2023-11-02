@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    div p+p{color: green;}
+
+    div + div{color: purple;}   
+
+    div span{font-weight: bold;}
+
+    div div div + p + div{color:  teal;}
+
+</style>
+
+<body>
+    <div class="abuelo">
+        <div class="padre">
+            <p>Hugo</p>
+            <p>Paco</p>
+            <p>Luis</p>
+            <div>
+                <span> Bisnieto</span>
+            </div>
+            <p>Primo</p>
+            <div>Sobrino</div>
+            <br>
+        </div>
+        <div class="hermano">
+            <span>Nieto</span>
+        </div>
+    </div>
+</body>
+
+</html>

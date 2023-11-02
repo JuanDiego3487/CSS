@@ -1,0 +1,47 @@
+#titulo {
+    color: teal;
+}
+
+h1 + p strong {
+    color: red;
+}
+
+h1 + p span {
+    color: yellow ;
+}
+
+#subtitulo {
+    color: blue;
+}
+
+h2 + p a {
+    color: red;
+}
+
+h2 + p a em {
+    color: blue;
+}
+
+
+table caption {
+    color: blue
+}
+
+table, td, th {
+    border: solid;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+#adicional {
+    color: rgb(142, 142, 71);
+}
+#especial {
+    color: rgb(156, 58, 75);
+}
+
+div a {
+    color: green ;
+}

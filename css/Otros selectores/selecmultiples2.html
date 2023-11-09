@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .classic {
+            border: 2px solid tomato;
+        }
+
+        .primary {
+            font-size: 5rem;
+        }
+
+        .large {
+            width: 50%;
+        }
+
+        button.classic.primary.large {
+            color: limegreen;
+        }
+
+        button [disabled] {
+            width: 25%;
+        }
+
+        [disabled] {
+            border: 2px solid black;
+            margin-left: 50px;
+        }
+
+        a[rel="nofollow"] {
+            background: red;
+        }
+
+        [data-mood~="happy"] {
+            background: green;
+            color: white;
+            padding: 5px;
+        }
+
+        [lang|="es"] {
+            background: red;
+            color: white;
+            padding: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <button class="classic primary large">Boton</button><br><br>
+    <button class="class large">Boton 2</button>
+    <input type="radio" name="miradio" id="miradio" disabled><br><br>
+    <a href="https://www.campuslands.com" rel="nofollow">campuslands
+    </a><br><br>
+    <a href="https://www.google.com" rel="nofollow">google
+    </a><br><br>
+
+    <div data-mood="happy sad">Uno</div><br><br>
+    <div lang="es-MX en-EN">English</div><br><br>
+</body>
+
+</html>

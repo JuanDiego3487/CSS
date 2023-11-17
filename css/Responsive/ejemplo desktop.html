@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            display: grid;
+            box-sizing: border-box;
+            grid-template-columns: repeat(12, 1fr);
+            grid-template-rows: repeat(10, 1fr);
+            font-weight: bolder;
+            gap: 5px;
+        }
+
+        header { 
+            background-color: blue;
+        }
+
+        nav {
+            background-color: yellowgreen;
+        }
+
+        section {
+            background-color: darkgoldenrod;
+        }
+        article {
+            background-color: orange;
+        }
+        aside {
+            background-color: darkred;
+        }
+        footer {
+            background-color: brown;
+        }
+
+        @media (max-width:768px){
+            header {
+                grid-column: 1 / -1;
+            }
+
+            nav {
+                grid-column: 1 / 4;
+                grid-row: 2 / 6;
+            }
+            section {
+                grid-column: 4 /  10;
+                grid-row: 2 /  6;
+            }
+            article {
+                grid-column: 10 /  13;
+                grid-row: 2 /  4;
+            }
+            aside {
+                grid-column: 10 /  13;
+                grid-row: 4 /  6;
+            }
+            footer {
+                grid-column: 1 / -1;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <header>Header</header>
+    <nav>Nav</nav>
+    <section>Section</section>
+    <article>Article</article>
+    <aside>Aside</aside>
+    <footer>Footer</footer>
+</body>
+</html>

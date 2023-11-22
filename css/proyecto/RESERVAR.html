@@ -4,8 +4,77 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            border-radius: 20px;
+        }
+
+        body {
+            height: 600px;
+            background-image: url("fondo.jpg");
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+        }
+
+        .prese {
+            margin-top: 5%;
+            width: 100%;
+            height: 15%;
+            text-align: center;
+            padding: 1px;
+            font-weight: bold;
+        }
+
+        .seccion1 {
+            text-align: center;
+            border: 1px solid black;
+            background-color: gray;
+            width: 50%;
+            height: 75%;
+            float: left;
+            margin: 5px;
+            padding: 20px;
+            color: white;
+        }
+        .fecha {
+            border: 1px solid black;
+            height: 50px;
+            text-align: left;
+            margin: 20px;
+            border-radius: 0;
+        }
+
+        .hora {
+            border: 1px solid black;
+            height: 100px;
+            border-radius: 0;
+            text-align: center;
+            margin: 20px;
+        }
+        .invitados {
+            height: 100px;
+            color: black;
+            border-radius: 0;
+            margin: 20px;
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
-    
+    <div class="prese"><h1>VIP BURGUER CENTER</h1></div>
+    <div class="seccion1"><h2>Invitados</h2>
+        <div class="invitados">
+            <label for="Numero invitados:">Numero invitados:</label>
+            <input type="number" name="Numero invitados:" id="Numero invitados:" min="5" max="40" value="5" step="1">
+        </div>
+        <div class="fecha">
+            <label for="fecha-hora-nac">Fecha y hora en la que desea reservar: </label>
+            <input type="datetime-local" name="fecha-hora-nac" id="fecha-hora-nac">
+        </div>
+        <div class="hora"></div>
+
+    </div>
 </body>
 </html>

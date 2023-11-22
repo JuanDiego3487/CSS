@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Recuadro con Opciones</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background-image: url("fondo.jpg");
+    }
+
+    .recuadro {
+      width: 300px;
+      padding: 50px;
+      background-color: #fff;
+      border-radius: 10px;
+    border: 2px dashed black;
+    }
+
+
+    select {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 16px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+
+    button {
+      background-color: gray;
+      color: white;
+      padding: 15px;
+      cursor: pointer;
+    }
+
+    
+  </style>
+</head>
+<body>
+
+<div class="recuadro">
+  <h1>Opciones</h1>
+  <form action="pagina_destino.php" method="post">
+    <label for="opciones">Selecciona una opción:</label>
+    <select id="opciones" name="opciones">
+      <option value="opcion1"> <link href="http://127.0.0.1:5500/css/proyecto/RESERVAR.html">dsf</link></option>
+      <option value="opcion2"> <a href="http://127.0.0.1:5500/css/proyecto/RESERVAR.html">fsfd</a></option>
+    </select>
+
+    <button type="submit">Aceptar</button>
+  </form>
+</div>
+
+</body>
+</html>

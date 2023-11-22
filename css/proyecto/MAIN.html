@@ -3,115 +3,106 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Imagenes con Css</title>
-
+    <title>Document</title>
     <style>
-        body{
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
             background-image: url("fondo.jpg");
-            background-repeat: no-repeat;
-            background-position: center center;
-            height: 900px;
-            background-attachment: fixed;
             background-size: cover;
 
-            display: grid;
-            box-sizing: border-box;
-            grid-template-rows: repeat(12, 1fr);
-            grid-template-columns: repeat(12, 1fr);
-            font-weight: bolder;
-            gap: 5px;
         }
-
-        @media (max-width: 480px) {
-            .menu {
-                grid-row: 1 /  2;
-                grid-column: 1 / 2;
+        .contenedor {
+            text-align: center;
             }
-
-            .domicilio {
-                grid-row: 2 / span 3;
-                grid-column: 1 / 2;
-            }
-            .reservar {
-                grid-row: 3 /  4;
-                grid-column: 1 / 2;
-            }
-            .comentario {
-                grid-row: 4 /  5;
-                grid-column: 1 / 2;
-            }
+        .caja1 {
+            width: 800px;
+            height: 0px;
+            padding: 20px;
+            margin: 10px;
+            display: block;
         }
-
-        .vip {
-            display: flex;
-            justify-content: space-around;
-            width: 60%;
+        .caja2 {
+            width: 800px;
+            padding: 20px;
+            margin: 10px;
+            border: 1px solid black;
             border-radius: 100px;
-            padding: 16px 32px;
-            margin: 10px 160px;
-            font-weight: bold;
-            align-items: center;
-        }
-
-
-        li {
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-            width: 60%;
             background-color: gray;
-            border-radius: 100px;
-            padding: 16px 32px;
-            margin: 10px 160px;
-            font-weight: bold;
+            display: block;
         }
-        .siguenos {
+        .caja3 {
+            width: 800px;
+            padding: 20px;
+            margin: 10px;
+            border: 1px solid black;
+            border-radius: 100px;
+            background-color: gray;
+            display: block;
+        }
+        .caja4 {
+            width: 800px;
+            padding: 20px;
+            margin: 10px;
+            border: 1px solid black;
+            border-radius: 100px;
+            background-color: gray;
+            display: block;
+        }
+        .caja5 {
+            width: 800px;
+            padding: 20px;
+            margin: 10px;
+            border: 1px solid black;
+            border-radius: 100px;
+            background-color: gray;
+            display: block;
+        }
+        .cajita {
+            width: 800px;
+            padding: 20px;
+            margin: 10px;
+            border: 1px solid black;
+            border-radius: 100px;
+            background-color: gray;
+            display: block;
+        }
+        .caja6 {
+            width: 800px;
+            padding: 20px;
+            margin: 10px;
+            border-radius: 100px;
+            display: block;
+        }
+        .caja7 {
+            width: 800px;
+            padding: 20px;
+            border-radius: 100px;
             display: flex;
             justify-content: space-around;
-            width: 60%;
-
-            border-radius: 100px;
-            padding: 16px 32px;
-            margin: 10px 160px;
-            font-weight: bold;
-        }
-        .redes {
-            display: flex;
-            justify-content: space-around;
-            border-radius: 100px;
-            padding: 16px 32px;
-            margin: 10px 160px;
         }
         a {
-            color: black;
             text-decoration: none;
+            color: black;
         }
-
-
-
 
     </style>
 </head>
 <body>
+    <div class="contenedor">
+        <div class="caja1"> <img src="vip.jpg" width="150px"></div><br><br><br><br><br><br><br>
+        <div class="caja2"><strong><a href="http://127.0.0.1:5500/css/proyecto/MENU.html">¡VER NUESTRA CARTA!</a></strong></div>
+        <div class="caja3"><strong> <a href="http://127.0.0.1:5500/css/proyecto/DOMICILIO.html">DOMICILIO</a></strong></div>
+        <div class="caja4"><strong> <a href="http://127.0.0.1:5500/css/proyecto/RESERVAR.html">RESERVAR</a></strong></div>
+        <div class="caja5"><strong> <a href="http://127.0.0.1:5500/css/proyecto/COMENTARIO.html"></a>FORMULARIO DE EXPERIENCIA </strong></div>
+        <div class="cajita"><strong><a href="##"></a>UBICACION DE NUESTRA TIENDAS</strong></div>
 
-        <div class="background">
-            <div class="vip"><img src="vip.jpg" alt=""> </div>
-
-            <li class="menu">
-                <a href="http://127.0.0.1:5500/css/proyecto/MENU.html">¡VER NUESTRO MENU!</a>
-            </li>
-            <li class="domicilio">
-                <a href="">DOMICILIO</a>
-            </li>
-            <li class="reservar">
-                <a href="">RESERVAR</a>
-            </li>
-            <li class="comentario">
-                <a href="">¡DEJANOS TU COMENTARIO!</a>
-            </li>
-            <div class="siguenos">SIGUENOS</div>
-                <div class="redes"> <img src="whatsapp.png" width=50px><img src="facebook.png" width=50px><img src="instagramç.jpg" width="50px"></div>
-        </div>
-
+        <div class="caja6"><strong>SIGUENOS</strong></div>
+        <div class="caja7"><img src="face.png" width="50px"> <img src="instagramç.jpg" width="50px"> <img src="whatsapp.png" width="47px">
+    </div>
+    </div>
 </body>
 </html>

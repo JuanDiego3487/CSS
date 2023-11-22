@@ -5,65 +5,89 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-    <style>
-        body{
+<style>
+
+*{
+    box-sizing: border-box;
+    border-radius: 20px;
+
+    }
+    body {
+            height: 600px;
             background-image: url("fondo.jpg");
-            background-repeat: no-repeat;
-            background-position: center center;
-            height: 900px;
-            background-attachment: fixed;
             background-size: cover;
+            align-content: center center;
+            align-items: center;
+            align-content: center;
+            font-weight: bold;
+            list-style-type: none;
+
+    }
+
+    .prese {
+        margin-top: 5%;
+        width: 100%;
+        height: 15%;
+        text-align: center;
+        padding: 1px;
+        font-weight: bold;
         }
-        main {
-            border: 1PX solid gray;
-            height: 1000px;
+
+    .seccion1 {
+        background-color: gray;
+
+        border: 1px solid black;
+        width: 50%;
+        height: 50%;
+        float: left;
+        }
+    .seccion2 {
+        background-color: gray;
+
+        border: 1px solid black;
+        width: 50%;
+        height: 50%;
+        float: right;
         }
 
-        .sencilla {
-            width: 41%;
-            border: 1px solid black;
-            display: inline-block;
-            padding: 40px;
-            font-family: 'Courier New', Courier, monospace;
+        .seccion3 {
 
+            background-color: gray;
+
+        border: 1px solid black;
+        width: 50%;
+        height: 50%;
+        float: left;
         }
-        .mixta {
-            width: 41%;
-            border: 1px solid black;
-            display: inline-block;
-            padding: 40px;
-            font-family: 'Courier New', Courier, monospace;
 
-        }
-        .especial {
-            width: 41%;
-            border: 1px solid black;
-            display: inline-block;
-            padding: 40px;
-            font-family: 'Courier New', Courier, monospace;
+        .seccion4 {
+            background-color: gray;
 
-
-        }
-        .doblevip {
-            width: 41%;
-            border: 1px solid black;
-            display: inline-block;
-            padding: 40px;
-            font-family: 'Courier New', Courier, monospace;
-
-
+        border: 1px solid black;
+        width: 50%;
+        height: 50%;
+        float: right;
         }
         strong {
             background-color: aquamarine;
         }
+        label {
+            float: left;
+        }
+        input {
+            float: left;
+        }
 
-    </style>
+
+</style>
 <body>
-    <main>
-        <div class="sencilla"><img src="sencilla.png" alt=""><strong>HAMBURGUESA SENCILLA</strong><br><br>130Gr de Carne de res, Queso, Vegetales, Cebolla Grille y papas a la francesa <br><br><strong>$17.000</strong></div> 
-        <div class="mixta"> <img src="sencilla.png" alt=""><strong>HAMBURGUESA MIXTA</strong><br><br>130Gr de Carne de Res, Pollo Desmechado, Vegetales, Queso y papas a la francesa<br><br><strong>$19.000</strong></div>    
-        <div class="especial"><img src="sencilla.png" alt=""><strong>HAMBURGUESA ESPECIAL</strong><br><br>130Gr de Carne de Res, Pollo Desmechado,Tocineta, Vegetales, Queso y papas a la francesa<br><br><strong>$20.000</strong></div>        
-        <div class="doblevip"><img src="sencilla.png" alt=""><strong>HAMBURGUESA DOBLE VIP</strong><br><br>260Gr de Carne de Res, Pollo Desmechado, Vegetales, Queso y papas a la francesa<br><br><strong>$23.000</strong></div>    
-    </main>
+    <li class="prese"><h1>VIP BURGUER CENTER</h1>
+        <label for="busqueda">Buscar: </label>
+        <input type="search" name="q" id="busqueda"></li><br><hr>
+    <li class="seccion1" align="center"><img src="sencilla.png" width="210px" height="60%"><br><strong>HAMBURGUESA SENCILLA</strong><br><br>130Gr de Carne de res, Queso, Vegetales, Cebolla Grille y papas a la francesa <br><br><strong>$17.000</strong></li>
+    <li class="seccion2"align="center"><img src="mixta.jpg" width="210px" height="60%"><br><strong>HAMBURGUESA MIXTA</strong><br><br>130Gr de Carne de Res, Pollo Desmechado, Vegetales, Queso y papas a la francesa <br><br><strong>$19.000</strong></li>
+    <li class="seccion3" align="center"><img src="campesina.jpg" width="210px" height="60%"><br><strong>HAMBURGUESA CAMPESINA</strong><br><br>130Gr de Carne de Res, Maiz Tierno, Cabano Ahumado, Pollo Desmechado, Vegetales, Queso y papas a la francesa <br><br><strong>$23.000</strong></li>
+    <li class="seccion4" align="center"><img src="desgranado.jpg" width="210px" height="60%"><br><strong>DESGRANADO DE LA CASA</strong><br><br>Maiz Tierno, Cabano Ahumado, Carne, Pollo Desmechado, Queso y papas a la francesa <br><br><strong>$19.000</strong></li>
+
 </body>
 </html>

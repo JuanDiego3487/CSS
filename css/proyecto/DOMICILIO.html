@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+
+*{
+    box-sizing: border-box;
+    border-radius: 20px;
+
+    }
+    body {
+            height: 600px;
+            background-image: url("fondo.jpg");
+            background-size: cover;
+            align-content: center center;
+            align-items: center;
+            align-content: center;
+            font-weight: bold;
+
+    }
+
+    .prese {
+        margin-top: 5%;
+        width: 100%;
+        height: 15%;
+        text-align: center;
+        padding: 1px;
+        font-weight: bold;
+        }
+
+
+
+
+    .seccion1 {
+        border: 1px solid black;
+        background-color: wheat;
+        width: 50%;
+        height: 100%;
+        float: left;
+        margin: 5px;
+        }
+
+    label, input {
+        padding: 10px;
+    }
+
+
+</style>
+<body>
+    <div class="prese"><h1>VIP BURGUER CENTER</h1></div><br>
+    <div class="seccion1">
+<br><br><br>
+        <label for="fnombre">-TU NOMBRE: </label>
+        <input type="text" name="fnombre" id="fnombre" maxlength="15" minlength="1" placeholder="Nombre.." size="10" list="browser"  pattern="[a-zA-Z]{1,15}">
+<br><br><br>
+        <label for="fbarrio">-INGRESA EL BARRIO DONDE VIVES: </label>
+        <input type="text" name="fbarrio" id="fbarrio" maxlength="15" minlength="1" placeholder="Barrio.." size="10" list="browser"  pattern="[a-zA-Z]{1,15}">
+<br><br><br>
+    <label for="fbarrio">-INGRESA LA DIRECCION:</label>
+    <input type="text" name="fbarrio" id="fbarrio" maxlength="15" minlength="1" placeholder="Direccion.." size="10" list="browser"  pattern="[a-zA-Z]{1,15}">
+<br><br><br>
+    <label for="fbarrio">-INGRESA TU TELEFONO: </label>
+    <input type="text" name="fbarrio" id="fbarrio" maxlength="15" minlength="1" placeholder="Telefono.." size="10" list="browser"  pattern="[a-zA-Z]{1,15}">
+<br><br><br><br>
+METODO DE PAGO:
+        <br><br>
+        <input type="radio" name="lengprog" id="Ada" value="Ada">
+        <label for="lengprog">NEQUI</label><br><br>
+        <input type="radio" name="lengprog" id="Python" value="Python" checked>
+        <label for="lengprog">EFECTIVO</label><br><br>
+        <input type="radio" name="lengprog" id="Java" value="id">
+        <label for="lengprog">BANCOLOMBIA</label><br>
+        
+    </div>
+
+</body>
+</html>

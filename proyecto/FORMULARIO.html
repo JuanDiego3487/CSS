@@ -34,15 +34,55 @@
             width: 50%;
             height: 50%;
             float: left;
-            margin: 5px;
             padding: 20px;
         }
+        @media (max-width:480px) {
+            .seccion1 {
+                grid-template-columns: repeat(5, auto);
+                grid-template-rows: repeat(5, auto);
+                text-align: center;
+                width: 100%;
+
+
+                
+            
+            }
+
+        }
+
+        @media (min-width:480px) and (max-width:768px) {
+
+        .seccion1 {
+            grid-template-columns: repeat(5, auto);
+            grid-template-rows: repeat(5, auto);
+            gap: 3%;
+            text-align: center;
+            width: 80%;    
+        }
+    }   
+
+
+        @media (min-width:768px) {
+                .prese {
+                    grid-template-columns: repeat(5, auto);
+                    grid-template-rows: repeat(5, auto);
+                    gap: 2%;
+                    text-align: center;
+                    width: 100%;
+                  
+
+
+                    
+                
+                }
+
+            }
     </style>
 </head>
 <body>
     <div class="prese"><h1>VIP BURGUER CENTER</h1></div><hr>
     <div class="seccion1">
-        <form action="https://www.google.com/search" method="get">
+        <form action="https://www.google.com/search" method="GET">
             <label for="comentarios">COMO FUE SU EXPERIENCIA <br> EN EL RESTAURANTE:</label>
             <br>
             <textarea name="comentarios" id="comentarios" cols="30" rows="10"></textarea><br>¡NOS INTERESA TU OPINION!

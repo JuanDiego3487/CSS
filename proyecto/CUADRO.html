@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Registro e Inicio de Sesión</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-image: url("fondo.jpg");
+            margin: 0;
+            }
+
+        .container {
+            text-align: center;
+            border: 5px solid black;
+            border-radius: 20px;
+        }
+
+        button {
+            background-color: #4caf50;
+            color: white;
+            padding: 15px 30px;
+            font-size: 16px;
+            margin: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        #registerButton {
+            background-color: #2196f3;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Bienvenido</h1>
+    <p>Selecciona una opción:</p>
+    <button id="registerButton">Registrarse</button>
+    <button id="loginButton">Iniciar Sesión</button>
+</div>
+
+<script>
+    // Redirigir a la página de registro al hacer clic en el botón "Registrarse"
+    document.getElementById("registerButton").addEventListener("click", function() {
+        window.location.href = "registro.html"; // Reemplaza "registro.html" con tu página de registro
+    });
+
+    // Redirigir a la página de inicio de sesión al hacer clic en el botón "Iniciar Sesión"
+    document.getElementById("loginButton").addEventListener("click", function() {
+        window.location.href = "iniciar_sesion.html"; // Reemplaza "iniciar_sesion.html" con tu página de inicio de sesión
+    });
+</script>
+
+</body>
+</html>

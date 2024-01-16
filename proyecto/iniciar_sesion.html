@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar Sesión</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-image: url("fondo.jpg");
+
+            }
+
+        .container {
+            text-align: center;
+            border: 3px solid black;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            background-color: #fff;
+
+        }
+
+        label {
+            display: block;
+            margin: 10px 0;
+        }
+
+        input {
+            padding: 10px;
+            margin: 5px 0;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: #4caf50;
+            color: white;
+            padding: 10px 20px;
+            font-size: 16px;
+            margin: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        a {
+            color: red;
+            float: right;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>Iniciar Sesión</h2>
+    <form>
+        <label for="username">Usuario:</label>
+        <input type="text" id="username" name="username" required>
+
+        <label for="password">Contraseña:</label>
+        <input type="password" id="password" name="password" required>
+
+        <button type="button" onclick="login()">Iniciar Sesión</button>
+    </form>
+
+    <p><a href="olvidar_contrasena.html">Olvidé mi contraseña</a></p>
+</div>
+
+<script>
+    function login() {
+        // Aquí puedes agregar la lógica de autenticación
+        var username = document.getElementById("username").value;
+        var password = document.getElementById("password").value;
+
+        // Ejemplo: Verificar que el usuario y la contraseña no estén vacíos
+        if (username && password) {
+            alert("Iniciando sesión con usuario: " + username);
+        } else {
+            alert("Por favor, ingresa un usuario y una contraseña.");
+        }
+    }
+</script>
+
+</body>
+</html>

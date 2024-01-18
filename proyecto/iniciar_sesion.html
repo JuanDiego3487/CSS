@@ -75,11 +75,9 @@
 
 <script>
     function login() {
-        // Aquí puedes agregar la lógica de autenticación
-        var username = document.getElementById("username").value;
-        var password = document.getElementById("password").value;
+        let username = document.getElementById("username").value;
+        let password = document.getElementById("password").value;
 
-        // Ejemplo: Verificar que el usuario y la contraseña no estén vacíos
         if (username && password) {
             alert("Iniciando sesión con usuario: " + username);
         } else {
